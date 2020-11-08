@@ -25,8 +25,19 @@
 
 .chat__messages {
   flex: 1;
+  overflow: scroll;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat__messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar fro IE, Edge and Firefox */
+.chat__messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 .chat__input {
   display: flex;
   align-items: center;
